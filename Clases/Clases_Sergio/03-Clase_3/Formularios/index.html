@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formularios</title>
+</head>
+<body>
+    <div id="form">
+   <form >
+    <h3>Texto</h3>
+    <label for="nombre">Introduce tu nombre: </label>
+    <input type="text" name="nombre"  maxlength="50" id="nombre" placeholder="hola">
+    <h3>Contraseña</h3>
+    <label for="password">Introduce tu contraseña:</label>
+    <input type="password" name="password" id="password" maxlength="10">
+    <h3>Fecha</h3>
+    <label for="fecha">Fecha</label>
+    <input type="date" name="fecha" id="fecha">
+    <h3>Hora</h3>
+    <label for="hora">Hora</label>
+    <input type="time" name="hora" id="hora">
+    <h3>Fecha y Hora</h3>
+    <label for="hora">Fecha y Hora</label>
+    <input type="datetime-local" name="hora" id="hora">ç
+    <h3>Area de texto</h3>
+    <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+    <br>
+    <h3>Radio</h3>
+    <label for="genero">Género: </label>
+    <br>
+    <input type="radio" name="genero" id="genero" value="F">Femenino
+    <input type="radio" name="genero" id="genero" value="M">Masculino
+    <input type="radio" name="genero" id="genero" value="O">Otro
+    <br>
+    <h3>Checkbox</h3>
+    <label for="idioma">Idiomas</label>
+    <br>
+    <input type="checkbox" name="idioma" id="idioma" value="1">Inglés
+    <input type="checkbox" name="idioma" id="idioma" value="2">Francés
+    <input type="checkbox" name="idioma" id="idioma" value="3">Alemén
+    <h3>Select</h3>
+    <label for="categoria"></label>
+    <select name="categoria" id="">
+        <option value="0" disabled selected>---Select---</option>
+        <option value="1">Auxiliar</option>
+        <option value="2">Catedra</option>
+        <option value="3">Planta</option>
+    </select>
+    <br>
+    <h3>Dato numerico</h3>
+    <label for="salario">Salario</label>
+    <input type="number" name="salario" id="salario">
+    <h3>Spinner</h3>
+    <label for="spinner"></label>
+    <input type="number" name="spinner" id="spinner"  min="0" max="20">
+    <br>
+    <h3>Email</h3>
+    <label for="email">Email</label>
+    <input type="email" name="email">
+    <br>
+    <input type="submit" name="" id="">
+    <br>
+    <label for="archivo">Adjutar Archivo</label>
+    <input type="file" name="archivo" id="archivo">
+   </form> 
+</div>
+</body>
+</html>

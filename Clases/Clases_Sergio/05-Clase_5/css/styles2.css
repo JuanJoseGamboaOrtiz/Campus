@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+    background-color:#6E09AD;
+    padding: 10px;
+}
+
+.item{
+    border: solid 1px #fff;
+    text-align: center;
+}

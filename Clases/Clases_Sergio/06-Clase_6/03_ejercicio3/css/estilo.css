@@ -1,0 +1,66 @@
+*{
+    margin:0;
+    padding: 0;
+
+}
+
+#contenedor{
+    width: 1200px;
+    height: 800px;
+    margin: 0.05em auto;
+    padding: 0.5em;
+}
+#header{
+    height: 15%;
+    background-color:beige;
+    margin: 1em;
+    border-radius: 1em;
+}
+#nav{
+    height: 10%;
+    background-color:beige;
+    margin: 1em;
+    border-radius: 1em;
+}
+#contenido{
+   
+    height: 56%;
+    margin: 1em;
+}
+#footer{
+    height: 10%;
+    margin: 1em;
+    background-color:beige;
+    border-radius: 1em;
+}
+#section{
+    
+    height: 100%;
+    width: 57%;
+    background-color:beige;
+    margin-left: 0.5em;
+    border-radius: 1em;
+    float: left;
+    
+}
+#aside{
+    
+    height: 100%;
+    width: 40%;
+    background-color:beige;
+    margin-right: 0.5em;
+    border-radius: 1em;
+    float:right;
+}
+.articulo{
+    height: 21%;
+    width: 97%;
+    background-color: rgb(213, 218, 231);
+    border-radius: 1em;
+    margin: 1em;
+}
+h1{
+    color:blue;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
