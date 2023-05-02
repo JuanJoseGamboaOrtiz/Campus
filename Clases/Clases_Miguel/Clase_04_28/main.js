@@ -1,6 +1,6 @@
 let formulario= document.querySelector('#form');
 formulario.addEventListener('submit',(e)=>{
-    let date =Object.fromEntries(new FormData(event.target));
+    let date =Object.fromEntries(new FormData(e.target));
     console.log(date);
     e.preventDefault();
 });

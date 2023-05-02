@@ -1,22 +1,24 @@
 const campus={
     campus:{
-        datosContacto:{
-            bucaramanga:'1111',
-            bogota:'1111',
-            medellin:'1111',
-            mexico:'1111'
+        sedes:{
+            bucaramanga:{
+                numero:'1111'
+            },
+            bogota:{
+                numero:'1111'
+            },
+            medellin:{
+                numero:'1111'
+            },
+            mexico:{
+                numero:'1111'
+            }
         }
     },
     trainers:[
         {nombre:'miguel',
         telefono:'333333',
-        teams:{
-            team1:{
-                dia:'',
-                hora:'',
-                salones:''
-            }
-        },
+        teams:'',
         email:'miguel@miguel.com'
     }],
     campers:[{
@@ -24,7 +26,7 @@ const campus={
         telefono:'5555',
         teams:'',
         email:'andres@andres.com',
-        nivelActual: this.teams,
+        nivelActual: '', 
         barrio:'Florida',
         medioTransporte:'Moto',
     }],
@@ -32,6 +34,7 @@ const campus={
         bajo:{
             preRequisito:'Ninguno',
             tecnologia:'',
+            obligatoria:''
         },
         medio:'',
         avanzado:'',
@@ -41,5 +44,3 @@ const campus={
     roadMap:'',
 
 }
-
-console.log(campus.campers[0].nivelActual);
