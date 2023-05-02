@@ -193,7 +193,8 @@ header{
     color: #fff;
     border-bottom-right-radius: 20px;
     z-index: 1;
-}
+    cursor: pointer;
+}   
 
 
 
@@ -250,7 +251,8 @@ header{
     transition: top .5s;
 }
 
-.input-box input:focus~label {
+.input-box input:focus~label,
+.input-box input:valid~label{
     top:-5px; 
 }
 
