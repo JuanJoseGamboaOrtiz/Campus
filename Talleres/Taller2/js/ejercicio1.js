@@ -3,7 +3,10 @@
 // mostrar un mensaje "Estudie“, de lo contrario un mensaje que
 // diga "becado"
 
-const texto=document.querySelector('.show-answer');
+const texto=document.querySelector('.show-answer h3');
+const icono=document.querySelector('.icon-face ion-icon');
+
+console.log(icono);
 
 document.querySelector('form').addEventListener('submit',e=>{
     e.preventDefault();
@@ -15,14 +18,12 @@ document.querySelector('form').addEventListener('submit',e=>{
     const promedio= (total/3).toFixed(1);
     if(promedio>3.9){
         var texto1='está becado.';
+        icono.name='happy-outline';
     }else{
         var texto1='debe seguir estudiando.'
+        icono.name='sad-outline'
     }
-    texto.innerHTML=`
-        <h3>
-            El promedio es ${promedio} por lo tanto el estudiante ${texto1} 
-        </h3>
-    `;
+    texto.innerHTML=`El promedio es ${promedio} por lo tanto el estudiante ${texto1}     `;
 
     boton1.addEventListener('click',(e)=>{
         wrapper.classList.add('active');
