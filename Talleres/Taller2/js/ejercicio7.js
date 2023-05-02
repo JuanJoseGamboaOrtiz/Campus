@@ -6,7 +6,7 @@ const nombre = prompt('Digite el nombre del articulo');
 const precio = parseInt(prompt('Digite el precio del artículo'));
 const cantidad = parseInt(prompt('Digite las unidades del articulo'));
 
-console.log(factura());
+console.log(factura(nombre,precio,cantidad));
 function factura(nombre,precio,cantidad){
     return ` el precio de que debe pagar es ${precio*cantidad} por los ${cantidad} articulos del tipo ${nombre} `;
 }

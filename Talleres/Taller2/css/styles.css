@@ -1,0 +1,298 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,110400+100 */
+    background: rgb(0,0,0); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(17,4,0,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(17,4,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(17,4,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#110400',GradientType=0 ); /* IE6-9 */
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.escene1,
+.pag1{
+    background-image: url(../img/escene1.jpg);
+}
+
+.escene2,
+.pag2{
+    background-image: url(../img/escene2.jpg);
+}
+.escene3,
+.pag3{
+    background-image: url(../img/escene3.webp);
+}
+.escene4,
+.pag4{
+    background-image: url(../img/escene4.webp);
+}
+.escene5,
+.pag5{
+    background-image: url(../img/escene5.webp);
+}
+.escene6,
+.pag6{
+    background-image: url(../img/escene6.webp);
+}
+.escene7,
+.pag7{
+    background-image: url(../img/escene7.webp);
+}
+.escene8,
+.pag8{
+    background-image: url(../img/escene8.webp);
+}
+.escene9,
+.pag9{
+    background-image: url(../img/escene9.jpg);
+}
+.escene10,
+.pag10{
+    background-image: url(../img/escene10.webp);
+}
+
+.escene1,
+.escene2,
+.escene3,
+.escene4,
+.escene5,
+.escene6,
+.escene7,
+.escene8,
+.escene9,
+.escene10{
+    width: 80%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.botones{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 50px;
+    z-index:1;
+}
+
+.carousel-item{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.centrar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* paginas ejercicios*/
+.contenedor-pag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo{
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+}
+
+.navs a{
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navs a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -6px;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navs a:hover::after{
+    transform-origin: left;
+        transform: scaleX(1);
+}
+
+/*Formulario*/
+
+.wrapper{
+    position: relative;
+    width:400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s ease;
+    overflow: hidden;
+}
+
+.wrapper .icon-close{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45px;
+    height: 45px;
+    background-color: #162938;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-bottom-right-radius: 20px;
+    z-index: 1;
+}
+
+
+
+.wrapper .form-box{
+    width: 100%;
+    padding: 40px;
+    height: 100%;
+}
+
+.wrapper .form-box.entradas{
+    transition: transform .25s ease;
+    transform: translateX(0);
+}
+
+.wrapper.active .form-box.entradas{
+    transition: none;
+    transform: translateX(-400px);
+}
+
+.wrapper .form-box.answer{
+    position: absolute;
+    transform: translateX(400px);
+}
+
+.wrapper.active .form-box.answer{
+    transition: transform .25s ease;
+    transform: translateX(0);
+}
+
+.form-box h2{
+    font-size: 2em;
+    color: #162938;
+    text-align: center;
+}
+
+
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #162938;
+    margin: 30px 0;
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+    transition: top .5s;
+}
+
+.input-box input:focus~label {
+    top:-5px; 
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+input[type=number] { -moz-appearance:textfield; }
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline:none;
+    font-size: 1em;
+    color: #162938;
+    font-weight: 600;
+}
+
+.input-box .icon{
+    position:absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #162938;
+    line-height: 57px;
+}
+
+.boton{
+    width: 100%;
+    height: 45px;
+    background: #162938;
+    border: none;
+    outline: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color:#fff ;
+
+}
+
+.show-answer{
+    margin-top: 10px;
+}
