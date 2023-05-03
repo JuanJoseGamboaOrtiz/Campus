@@ -1,0 +1,99 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+h3{
+    font-size: 3.5rem;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.encabezado{
+    background: rgb(238,110,115);
+    background: linear-gradient(167deg, rgba(238,110,115,1) 0%, rgba(255,128,171,1) 43%, rgba(0,212,255,1) 100%);
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center ;
+}
+
+.info-encabezado{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: #fff;
+    align-items: center;
+}
+
+.info-encabezado h1{
+    font-size: 5rem;
+}
+
+
+
+.info-encabezado .ingresos,
+.info-encabezado .egresos{
+    width: 40rem;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    text-transform: uppercase;
+    justify-content: space-between;
+}
+
+.info-encabezado .ingresos{
+    background-color: #FF5049;
+}
+
+.info-encabezado .egresos{
+    background-color: #28B9B5;
+}
+
+.egresos p,.ingresos p{
+    font-size: 2rem;
+    transition: transform 0.8s ease;
+    transform: translateX(35px);
+}
+
+.monto{
+    display: flex;
+    align-items: center;
+}
+
+
+
+.monto .porcentaje{
+    width: auto;
+    padding: 0 0.7rem;
+    margin-left: 2rem;
+    border-radius: 2px;
+    background-color: rgb(255 255 255 / 0.3);
+    backdrop-filter: blur(20px);
+    transition: transform 0.8s ease;
+    transform: translateX(35px);
+}
+
+.monto .porcentaje:hover{
+    transform: (translateX(-35px));
+}
+
+
+
+
+.monto .porcentaje p{
+    font-size: 1.5rem;
+}
+
