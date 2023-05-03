@@ -1,0 +1,37 @@
+.wrapper{
+    height: 380px;
+}
+.wrapper .icon-close{
+    background-color: #024023 !important;
+    color: #fff !important;
+}   
+.wrapper .icon-close{
+    background-color: #024023 !important;
+}   
+
+.input-box .icon{
+    color: #024023 !important;
+}
+
+.boton{
+    background: #024023 !important;
+    color:#fff ;
+}
+
+.input-box input{
+    color: #024023 !important;
+}
+
+.input-box label{
+    color: #024023 !important;
+}
+
+.input-box{
+    border-bottom: 2px solid #024023 !important;
+}
+
+.form-box h2{
+    color: #024023 !important;
+}
+
+

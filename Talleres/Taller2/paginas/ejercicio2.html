@@ -9,7 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/styles.css">
-    <script src="../js/ejercicio2.js" defer></script>
+    <link rel="stylesheet" href="../css/styles2.css">
+    <script src="../js/ejercicio2.js" defer></script> 
+    <script src="../js/wrapper.js" defer></script> 
     <title>Ejercicio 2</title>
 </head>
 <body>
@@ -21,7 +23,36 @@
                 <a href="#">Extra</a>
             </nav>
         </header>
+
+        <div class="wrapper">
+            <div class="form-box entradas">
+                <h2>Número par-impar</h2>
+                <form>
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="calculator"></ion-icon>
+                        </span>
+                        <input type="text" name="nota1" required>
+                        <label >Número</label>
+                    </div>
+                    <input type="submit" value="Calcular" class="boton">
+                </form>
+            </div>
+            <div class="form-box answer">
+                <span class="icon-close">
+                    <ion-icon name="arrow-undo"></ion-icon>
+                </span>
+                <h2>Respuesta</h2>
+                <div class="show-answer">
+                    <h3>
+
+                    </h3>
+                </div>
+            </div>
+        </div>
     </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </body>
 </html>

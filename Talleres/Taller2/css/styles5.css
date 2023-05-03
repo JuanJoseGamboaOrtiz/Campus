@@ -1,0 +1,48 @@
+.wrapper{
+    height: 390px;
+}
+
+.prueba{
+    display: flex !important;
+    gap: 12px;
+}
+
+.input-box:first-child {
+    flex-basis: 180%;
+}
+
+
+.wrapper .icon-close{
+    background-color: #162938 !important;
+    color: #fff !important;
+}   
+.wrapper .icon-close{
+    background-color: #162938 !important;
+}   
+
+.input-box .icon{
+    color: #162938 !important;
+}
+
+.boton{
+    background: #162938 !important;
+    color:#fff ;
+}
+
+.input-box input{
+    color: #162938 !important;
+}
+
+.input-box label{
+    color: #162938 !important;
+}
+
+.input-box{
+    border-bottom: 2px solid #162938 !important;
+}
+
+.form-box h2{
+    color: #162938 !important;
+}
+
+

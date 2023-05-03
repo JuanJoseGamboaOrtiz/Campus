@@ -9,7 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/styles3.css">
     <script src="../js/ejercicio3.js" defer></script>
+    <script src="../js/wrapper.js" defer></script>
     <title>Ejercicio 3</title>
 </head>
 <body>
@@ -21,6 +23,43 @@
                 <a href="#">Extra</a>
             </nav>
         </header>
+
+        <div class="wrapper">
+            <div class="form-box entradas">
+                <h2>Voltaje</h2>
+                <form>
+                    <div class="input-box">
+                        <span class="icon">
+                            <img src="../img/current.svg" >
+                        </span>
+                        <input type="text" name="corriente" required>
+                        <label>Amperaje</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <img src="../img/resistencia.svg" >
+                        </span>
+                        <input type="text" name="resistencia" required>
+                        <label>Resistencia</label>
+                    </div>
+                    <input type="submit" value="Calcular" class="boton">
+                </form>
+            </div>
+            <div class="form-box answer">
+                <span class="icon-close">
+                    <ion-icon name="arrow-undo"></ion-icon>
+                </span>
+                <h2>Respuesta</h2>
+                <div class="show-answer">
+                    <h3>
+
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     </div>
 </body>
 </body>
