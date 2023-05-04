@@ -51,14 +51,15 @@ body{
     padding: 2rem;
     text-transform: uppercase;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .info-encabezado .ingresos{
-    background-color: #FF5049;
+    background-color: #28B9B5;
 }
 
 .info-encabezado .egresos{
-    background-color: #28B9B5;
+    background-color: #FF5049 ;
 }
 
 .egresos p,.ingresos p{
@@ -68,9 +69,17 @@ body{
 .monto{
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 
+.monto{
+    transition:  transform .5s ease;
+    transform: translateX(55px);
+}
 
+.ingresos.activo .monto,.egresos.activo .monto{
+    transform: translateX(-10px);
+}
 
 .monto .porcentaje{
     width: auto;
