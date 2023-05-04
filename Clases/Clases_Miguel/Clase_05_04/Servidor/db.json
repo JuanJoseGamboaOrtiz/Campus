@@ -1,0 +1,35 @@
+{
+  "profesor": [
+    {
+      "id": 1,
+      "name": "Armando",
+      "tecnologias": {
+        "tecnologia1": "html",
+        "tecnologia2": "css"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Hyde",
+      "tecnologias": {
+        "tecnologia1": "ajax",
+        "tecnologia2": "jquery"
+      }
+    },
+    {
+        "id": 3,
+      "tecnologias": {
+        "tecnologia1": "La peste",
+        "tecnologia2": "El extranjero"
+      },
+      
+      "objetoNuevo":{
+        "datos": ["aaa"]
+      }
+    }
+  ],
+  "direccion": [],
+  "estudios": []
+}
+
+
