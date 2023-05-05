@@ -1,0 +1,22 @@
+{
+  "usuarios": [
+    {
+      "nombre": "Antonio",
+      "id": 1,
+      "apellido": "Velandia",
+      "edad": "15"
+    },
+    {
+      "nombre": "Antonio",
+      "id": 2,
+      "apellido": "Lopez",
+      "edad": "15"
+    },
+    {
+      "nombre": "andres",
+      "id": "3",
+      "apellido": "alvarez",
+      "edad": "10"
+    }
+  ]
+}
