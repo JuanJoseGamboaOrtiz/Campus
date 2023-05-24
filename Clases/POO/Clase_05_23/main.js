@@ -54,7 +54,7 @@ class Boligrafo extends Lapiz{
 
 // console.log(lapiz1.afilar(lapiz1.getMina));
 
-let boligrafo=new Boligrafo({color:"black"});
-
+let boligrafo=new Boligrafo();
+console.log(boligrafo);
 console.log(Boligrafo.afilar(boligrafo.getMina));
 
